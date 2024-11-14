@@ -1,0 +1,159 @@
+.video-player-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; /* Allow the container to use full width */
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  box-shadow:0px 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+
+}
+
+.react-player-wrapper {
+  width: 100%; /* Make the video occupy a larger width of the container */
+  max-width: 900px; /* Optional: limit the maximum width */ /* Maintain the aspect ratio of the video */
+  border-radius: 10px;
+  overflow:hidden;
+}
+
+.react-player-wrapper .react-player {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/*.stopwatch {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  /*padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333; /* Dark text for contrast */
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+
+  .stopwatch {
+    position: absolute;
+    top: 100px; /* Adjusted position */
+    right: 100px; /* Adjusted position */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent */
+    padding: 30px 34px; /* Increased padding */
+    border-radius: 12px; /* More rounded corners */
+    font-size: 30px; /* Increased font size */
+    color: #333; /* Dark text for contrast */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    display: flex; /* Added flexbox for alignment */
+    flex-direction: column; /* Stack controls vertically */
+    align-items: center; /* Centered content */
+}
+
+.display {
+    font-size: 40px; /* Increased display font size */
+    font-weight: bold; /* Bold font for emphasis */
+    color: #6b4f4f; /* Warm dark brown for display */
+    margin-bottom: 10px; /* Space below display */
+}
+
+.control {
+    display: flex;
+    gap: 10px; /* Increased gap between buttons */
+}
+
+button {
+    padding: 10px 16px; /* Increased button size */
+    font-size: 16px; /* Larger font size for buttons */
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+/* Button styles */
+.Start-button {
+    background-color: #77c593; /* Warm green */
+}
+
+.Start-button:hover {
+    background-color: #5aa87c; /* Darker green on hover */
+}
+
+.Stop-button {
+    background-color: #f28c8c; /* Warm red */
+}
+
+.Stop-button:hover {
+    background-color: #d66d6d; /* Darker red on hover */
+}
+
+.Reset-button {
+    background-color: #ffd966; /* Warm yellow */
+}
+
+.Reset-button:hover {
+    background-color: #ffca3a; /* Darker yellow on hover */
+}
+
+/* Modal Styling */
+
+
+/* Overlay to dim the background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+  /* Modal content container */
+  .modal-content {
+    background-color: #fff; /* White background for the modal */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px; /* Max width to keep the modal from being too wide */
+    width: 90%; /* Ensure it resizes on smaller screens */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Ensure modal content is above the overlay */
+  }
+  
+  
+  .modal-content h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  
+  .modal-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .modal-content button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .modal-content button:focus {
+    outline: 2px solid #ffbf47;
+    outline-offset: 2px;
+  }

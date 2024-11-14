@@ -1,0 +1,90 @@
+/* Container for the Todo List */
+.to-do-list {
+    max-width: 500px;          /* Restrict the width for a neat appearance */
+    margin: 20px auto;         /* Center align with auto margins */
+    padding: 20px;
+    background-color: #fdf6e3; /* Light background color */
+    border-radius: 10px;       /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;        /* Center align text */
+}
+
+/* Heading for the Todo List */
+.to-do-list h1 {
+    font-size: 24px;
+    color: #343a40;            /* Darker color for readability */
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+.to-do-list input[type="text"] {
+    width: 70%;                /* Make input field fill most of the width */
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Done button */
+.to-do-list button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Bootstrap primary color for consistency */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.to-do-list button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Styling for the task list */
+.to-do-list ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.to-do-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 16px;
+}
+
+/* Task text */
+.to-do-list .text {
+    flex: 1;                   /* Fills the available space */
+    text-align: left;
+    color: #495057;
+}
+
+/* Buttons for each task */
+.delete-button {
+    border: none;
+    background: transparent;   /* Transparent to keep focus on the text */
+    color: #6c757d;            /* Neutral color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-left: 8px;
+}
+
+.delete-button:hover {
+    color: #dc3545;            /* Red for delete, consistent with error color */
+}
+
+/* Up and Down buttons with subtle changes on hover */
+.delete-button:nth-of-type(2):hover { /* Up button */
+    color: #28a745;            /* Green shade for moving up */
+}
+
+.delete-button:nth-of-type(3):hover { /* Down button */
+    color: #ffc107;            /* Yellow shade for moving down */
+}

@@ -1,0 +1,70 @@
+/* index.css */
+
+/* Setting the overall background and text color for the entire webpage */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #242424; /* Dark background for the entire page */
+    color: rgba(255, 255, 255, 0.87); /* Light text color */
+}
+
+/* Main container for the entire page */
+.top {
+    display: flex;
+    flex-direction: column; /* Column layout for vertical stacking */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height for vertical centering */
+}
+
+/* Styling for the search bar */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 800px; /* Set width for the search bar */
+    padding: 20px;
+    background-color: #333; /* Dark background for the search bar */
+    border-radius: 8px; /* Rounded corners for search bar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow for depth */
+}
+
+/* Input field styling */
+.search input {
+    flex: 1; /* Makes the input field take up available space */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light border for the input */
+    background-color: #444; /* Darker background for input */
+    color: rgba(255, 255, 255, 0.87); /* Light text color */
+}
+
+/* Button styling */
+.search button {
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for the button */
+    background-color: #ff4c4c; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+.search button:hover {
+    background-color: #e60000; /* Darker button color on hover */
+}
+
+.todo{
+    position:absolute;
+    top:50px;
+    right: 100px;
+    padding: 10px 15px;
+    border-radius:5px;
+    background-color: #ff4c4c;
+    color: white;
+}
+
+.todo:hover{
+    background-color: #e60000;
+}
