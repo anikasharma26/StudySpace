@@ -37,7 +37,7 @@ const VideoPlayer = () =>{
             height="80vh" 
             onReady={onPlayerReady}/>
             <Stopwatch onTimeReached={() => {
-                console.log("Time reached! opening modal...");
+                console.log("opening modal...");
                 setIsModalOpen(true);
                 handleStopVideo();  // Stop the video when time is reached
             }} />
